@@ -1,5 +1,4 @@
-E-Commerce Backend
-  ![Badge for GitHub commit activity](https://img.shields.io/github/commit-activity/w/jazminejose/eCommerce?style=for-the-badge)
+Weather Dashboard
 
 ## Table of Content(s)
 
@@ -13,6 +12,8 @@ E-Commerce Backend
 
 ## Description
 The Weather Dashboard uses HTML/CSS/JS that provides the current temperature and 5-day forecast of the city searched. 
+
+<img src="https://user-images.githubusercontent.com/92974218/149001650-b89682da-8784-49cf-8db5-f3d9422f01b1.png" alt="weather dashboard">
 
 ## Installation
 
