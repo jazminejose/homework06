@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-<!-- Bootstrap Link -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- CSS Link -->
-<link rel="stylesheet" href="style.css" />
-<!-- Reset CSS Link -->
-<link rel="stylesheet" href="reset.css" />
-<!-- Link to Font Quicksand -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <title>WeatherDashboard</title>
+  
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
-
-<body>
-      <header class="jumbotron">
-        <h1 class="display-3">Weather Dashbboard</h1>
-      </header>
-
+<body>  
+  
 <div class="container">
+<h1>Weather Dashboard</h1>
+
+  
   <div class="row">
-    <div class="col-4">
-      <h1>Search City: </h1>
-      <input type="text" placeholder="Search..">
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Search</button>
+
+    <div class="col-3">
+      <h2 id="form-heading" class="mt-1 h3 form-label">
+        Search city:
+      </h2>
+      <form>
+        <div class="mb-3">
+          <label for="searchText" class="form-label"></label>
+          <input type="searchCity" class="form-control" id="searchCity" aria-describedby="searchCity"
+          placeholder="columbus">
+        </form>
       </div>
+      <div class="input-group-append">
+        <button id="search" type="submit" class="btn btn-primary" aria-label="submit search">
+          Search
+        </button>
+      </div>
+
+      <div id="searched" class="list-group"></div>
     </div>
-    <div class="col-8">
-      <div class="card text-center">
-        <div class="card-header">
-          Weather
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Weather</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
-      </div>
+
+    
+    <div class="col-9">
+      <section class="row" id="today"></section>
+      <section class="row" id="forecast"></section>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-<!-- Bootstrap Link -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<!-- Script Link -->
-<script src="script.js"></script>
-
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  "
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
